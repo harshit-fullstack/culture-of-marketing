@@ -1,0 +1,101 @@
+.container-1 {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+@media (max-width: 992px) {
+  .container-1 {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-1 {
+    column-count: 1;
+  }
+}
+
+.card {
+  background: white;
+  margin-bottom: 1rem;
+  display: inline-block;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.card:hover{
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  transform: translateY(-10px);
+
+}
+.card:hover img{
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+  filter: brightness(0.4);
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin: 0 0 10px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.badge-success { background: #28a745; }
+.badge-warning { background: #ffc107; color: black; }
+.badge-primary { background: #007bff; }
+.badge-info { background: #17a2b8; }
+
+blockquote {
+  margin: 0;
+  padding: 15px;
+  font-style: italic;
+  background: #f0f0f0;
+  border-left: 4px solid #ccc;
+}
+
+blockquote footer {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+.unique{
+  padding: 104px 20px 60px;
+}
